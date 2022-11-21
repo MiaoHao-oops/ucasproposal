@@ -21,7 +21,7 @@
 %---------------------------------------------------------------------------%
 %->> Document settings
 %---------------------------------------------------------------------------%
-\usepackage[authoryear,list,xhf]{Style/artratex}% document settings
+\usepackage[bibtex,numbers,list,xhf]{Style/artratex}% document settings
 %- usage: \usepackage[option1,option2,...,optionN]{artratex}
 %- Multiple optional arguments:
 %- [bibtex|biber]% set bibliography processor and package
@@ -112,11 +112,14 @@
 %-
 %-> Backmatter: bibliography, glossary, index
 %-
+\begin{SecBox}
 \artxifstreq{\artxbib}{bibtex}{% enable bibtex
     \bibliography{Biblio/ref}% bibliography
 }{%
     \printbibliography% bibliography
 }
+\end{SecBox}
+\input{Tex/Backmatter.tex}
 \end{document}
 %---------------------------------------------------------------------------%
 
