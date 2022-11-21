@@ -51,6 +51,51 @@
 %-
 %-> Titlepage information
 %-
+
+\usepackage{mdframed}
+\usepackage{tabularx}
+
+\newcommand*{\Text}{%
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    Sed accumsan nulla ac ipsum elementum interdum. 
+    Praesent ultricies faucibus turpis, non scelerisque nisi bibendum et.%
+}
+
+\newmdenv[
+    everyline=true,
+    splittopskip=25pt,
+    skipabove=0pt,
+    skipbelow=0pt,
+    innertopmargin=5pt,
+    ]{SecBoxMdframed}
+
+\newmdenv[
+    everyline=true,
+    splittopskip=25pt,
+    skipabove=0pt,
+    skipbelow=0pt,
+    innerleftmargin=0,
+    innerrightmargin=0,
+    innertopmargin=0,
+    innerbottommargin=0,
+    ]{SecTabMdframed}
+
+
+\newenvironment{SecBox}{%
+    \begin{SecBoxMdframed}%
+    \par\noindent\ignorespaces
+}{%
+    \end{SecBoxMdframed}%
+    \ignorespacesafterend
+}
+\newenvironment{SecTab}{%
+    \begin{SecTabMdframed}%
+    \par\noindent\ignorespaces
+}{%
+    \end{SecTabMdframed}%
+    \ignorespacesafterend
+}
+
 \input{Tex/Frontinfo}%
 \begin{document}
 %-
