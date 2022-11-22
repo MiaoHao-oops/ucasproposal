@@ -13,6 +13,8 @@
 <img width="50%" src="https://github.com/mohuangrui/mohuangrui/blob/main/gallery/ucasproposal.gif" alt="ucasproposal">
 </h1>
 
+* 本科生使用前**务必向所在学院询问清楚**，出现任何问题概不负责。
+
 ## 模板简介
  
 * ucasproposal 用于撰写中国科学院大学开题报告，面向对象为国科大学生（硕、博及留学生）。
@@ -22,6 +24,8 @@
 * `2020-01-09` 模板样式进行了修改，请查看下面的修改描述，以决定是否需要更新。
 
 ## 更新记录
+
+* `2022-11-22` 增加了本科开题报告的“表格”样式。
 
 * `2021-09-27` [benkwoook, issue #359](https://github.com/mohuangrui/ucasthesis/issues/359)，增强 artratex.sty，提供去掉“引言”类章节的章节编号的功能。
 
